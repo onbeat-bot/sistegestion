@@ -1,0 +1,25 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  border-radius: 8px; // Opcional: Para esquinas redondeadas
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Opcional: Sombra para darle profundidad
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Efecto en el hover
+
+  &:hover {
+    transform: scale(1.05); // Escalar la tarjeta al pasar el cursor
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Intensificar la sombra en el hover
+  }
+
+  .background-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.5); // Ajusta el brillo de la imagen si es necesario
+    z-index: 0;
+  }
+}

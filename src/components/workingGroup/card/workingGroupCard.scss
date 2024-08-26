@@ -1,0 +1,104 @@
+.working-group-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  width: 270px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px); /* Más elevación al pasar el ratón */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    object-fit: cover; /* Mantiene la relación de aspecto y evita distorsión */
+  }
+
+  .avatar {
+    width: 100px; /* Tamaño fijo del círculo */
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #fff; /* Borde blanco para resaltar el círculo */
+    background-color: #007bff; /* Fondo por defecto si el color aleatorio no se aplica */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor del círculo */
+  }
+
+  .initials {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    padding: 1rem 0;
+
+    .name {
+      margin: 0.5rem 0;
+      font-size: 1.5rem; /* Tamaño de fuente más grande para el nombre */
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profession {
+      margin: 0.5rem 0;
+      font-size: 1.125rem; /* Tamaño de fuente ligeramente mayor */
+      color: #555; /* Color más oscuro para mayor contraste */
+    }
+
+    .description {
+      font-size: 0.875rem;
+      color: #666; /* Color ligeramente más claro */
+      line-height: 1.6; /* Mayor altura de línea para mejor legibilidad */
+      margin-bottom: 1rem;
+    }
+  }
+
+  .socialNetworks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio más amplio entre íconos */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem; /* Ajustado para un tamaño más grande */
+      height: 2.5rem;
+      background-color: #f4f4f4;
+      border-radius: 50%;
+      color: #333;
+      font-size: 1.25rem; /* Tamaño de fuente aumentado para los íconos */
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #ddd;
+        color: #007bff; /* Color de resaltado en hover */
+      }
+
+      &.btn-icon {
+        width: 3rem; /* Aumentado para mejor ajuste de iconos */
+        height: 3rem;
+        font-size: 1.5rem; /* Tamaño de icono aumentado */
+      }
+    }
+  }
+}

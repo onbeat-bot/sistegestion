@@ -1,0 +1,29 @@
+.customer-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 300px; /* Ajusta según sea necesario */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Añadido para el cambio de fondo */
+  margin: 1rem;
+
+  &:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0; /* Cambio de color de fondo al hacer hover */
+  }
+
+  .logo {
+    width: 100px; /* Ajusta según el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 50%;
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: contain; /* Mantiene la proporción de la imagen sin recortes */
+  }
+}
+  

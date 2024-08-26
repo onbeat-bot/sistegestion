@@ -1,0 +1,72 @@
+/* navbar.scss */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; // Ajusta el color de fondo según tu diseño
+  transition: all 0.3s ease; // Transición suave para el efecto de desplazamiento
+  z-index: 2000; // Asegúrate de que este valor sea mayor que el de Probar
+  color: white;
+
+  a {
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  &.sticky {
+    position: fixed;
+    background-color: #333; // Color de fondo cuando el navbar se vuelva sticky
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra para dar un efecto de elevación
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 8rem; // Padding lateral de 8rem
+    max-width: 1200px; // Ajusta el ancho máximo según tus necesidades
+    margin: 0 auto; // Centra el contenido
+
+    .brandName {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 50px; // Ajusta el tamaño del logo según sea necesario
+      }
+
+      .brandText {
+        margin-left: 10px;
+
+        h4 {
+          margin: 0;
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      gap: 1rem; // Espacio entre los enlaces del menú
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007BFF; // Ajusta el color del hover según tu diseño
+        }
+      }
+    }
+  }
+}

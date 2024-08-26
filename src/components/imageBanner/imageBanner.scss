@@ -1,0 +1,76 @@
+/* banner.scss */
+
+.image-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 8rem;
+    background-color: #f4f4f4; // Fondo claro para el banner
+    gap: 2rem; // Espacio entre el contenido de texto y la imagen
+  
+    &--left {
+      .text-content {
+        order: 2; // La imagen se mostrará primero si la posición es 'left'
+      }
+  
+      .image-content {
+        order: 1; // La imagen estará en el lado izquierdo
+      }
+    }
+  
+    &--right {
+      .text-content {
+        order: 1; // La imagen se mostrará después del texto si la posición es 'right'
+      }
+  
+      .image-content {
+        order: 2; // La imagen estará en el lado derecho
+      }
+    }
+  
+    .text-content {
+      flex: 1;
+      max-width: 50%; // Limita el ancho máximo del contenido de texto
+      padding: 1rem;
+      
+      h5 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        color: #555; // Color más suave para el subtítulo
+      }
+  
+      h1 {
+        margin: 0.5rem 0;
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+  
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+  
+      ul {
+        list-style-type: disc;
+        margin-left: 2rem;
+  
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  
+    .image-content {
+      flex: 1;
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+  
+      img {
+        max-width: 100%;
+        height: auto; // Mantiene la proporción de la imagen
+      }
+    }
+  }
+  

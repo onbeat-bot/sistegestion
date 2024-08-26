@@ -1,0 +1,72 @@
+/* probar.scss */
+.probar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 1000; // Asegúrate de que este valor sea menor que el de Navbar
+  color: white;
+
+  a {
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  &.sticky {
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .brandName {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 50px;
+      }
+
+      .brandText {
+        margin-left: 10px;
+
+        h4 {
+          margin: 0;
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007BFF;
+        }
+      }
+    }
+  }
+}
